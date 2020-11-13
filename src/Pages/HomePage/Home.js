@@ -7,21 +7,22 @@ import cardData from '../../Components/CardItem/CardData'
 
 
 const Home = () => {
+    const [products, setProducts] = useState(cardData)
 
-    const productData = cardData.map(card =>
+    const productData = products.map(card =>
         <div className='col-12 col-md-6 col-lg-3'>
-        <CardItem key={card.id} product={card} />
+            <CardItem key={card.id} product={card} />
         </div>)
 
     return (
         <div className='home'>
-            
+
             <BackGround />
             <Navbar />
 
-            <div className='product' >
+            <div className='cards' >
                 <div className="d-flex flex-wrap">
-                    { productData}
+                    {productData}
                 </div>
             </div>
         </div>

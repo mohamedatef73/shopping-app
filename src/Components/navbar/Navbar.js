@@ -5,7 +5,7 @@ import './Navbar.scss'
 
 const Navbar = () => {
     return (
-        <nav className='navbar navbar-expand-lg'>
+        <nav className='navbar fixed navbar-expand-lg'>
 
             <Link to='/' className='navbar-brand'>
                 <img src={icon} alt='store icon' />
@@ -18,7 +18,7 @@ const Navbar = () => {
                 <span className="navbar-toggler-icon"></span>
             </button>
 
-            <div  className="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+            <div className="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
                 <ul className='navbar-nav'>
                     <li className='nav-item active'>
                         <Link to='/contact' className='nav-link text-warning'>Contacts</Link>
@@ -45,13 +45,9 @@ const Navbar = () => {
                     <li className='nav-item active'>
                         <Link to='/' className='nav-link text-warning'>About</Link>
                     </li>
-
-
                 </ul>
             </div>
         </nav>
-
-
     )
 
 

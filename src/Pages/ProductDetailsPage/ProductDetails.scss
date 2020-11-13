@@ -1,0 +1,160 @@
+$primary-color: #272727;
+$secondary-color: #ff652f;
+
+
+.item {
+    width: 600px;
+    height: 550px;
+    padding-top: 1px;
+}
+
+.row {
+    justify-content: space-between;
+    background: linear-gradient(to bottom, rgba($primary-color, 0.8), rgba($primary-color, 0.1));
+
+}
+.size {
+    font-size: 25px;
+}
+.color {
+    font-size: 25px;
+}
+.size span {
+    width: 30px;
+    height: 30px;
+    font-size: 24px;
+    display: inline-block;
+    color: #111;
+    background: #fff;
+    transition: 0.5s;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 3px;
+    padding: 1px;
+    margin-left: 5px;
+}
+.color span {
+    width: 20px;
+    height: 20px;
+    font-size: 14px;
+    display: inline-block;
+    color: #111;
+    background: #fff;
+    transition: 0.5s;
+    cursor: pointer;
+    border-radius: 30px;
+    margin-right: 3px;
+}
+span:hover {
+    background: #9bdc28;
+}
+
+.color span:nth-child(2) {
+    background: #c50cb6;
+}
+.color span:nth-child(3) {
+    background: #03a9f4;
+}
+.color span:nth-child(4) {
+    background: #e91e63;
+}
+
+.container .box:hover::before,
+.container .box:hover::after {
+    opacity: 0.04;
+}
+.container .box:hover .buy {
+    bottom: 30px;
+    opacity: 1;
+}
+
+
+.container .box .product {
+    position: absolute;
+    // top: 50%;
+    left: 5%;
+    max-width: 400px;
+    // height: 300px;
+    background-size: cover;
+    transition: 0.5s;
+    // z-index: 11;
+    transform-style: preserve-3d;
+    // transform: translate3d(-50%, -50%, 0px);
+}
+
+
+  .testimonial {
+    padding-top: 84px;
+}
+
+.testimonial__text {
+    text-align: center;
+    padding: 30px;
+    color: rgb(54, 54, 54);
+        // background-color: rgba(0, 0, 0, 0.8);
+        border: 1px solid;
+        border-radius:20px;
+
+
+    span {
+        color: #e53637;
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 20px;
+        font-style: italic;
+        line-height: 30px;
+        padding-top: 12px;
+        margin-bottom: 25px;
+    }
+}
+
+
+.testimonial__author__pic {
+    float: left;
+    margin-right: 20px;
+
+    img {
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+    }
+}
+
+.testimonial__author__text {
+
+    h5 {
+        font-weight: 700;
+        margin-bottom: 5px;
+    }
+
+    p {
+        color: #b7b7b7;
+        margin-bottom: 0!important;
+        padding-top: 0;
+    }
+}
+
+.testimonial__pic {
+    height: 600px;
+}
+
+.shop {
+    color: rgb(224, 66, 66);
+    font-size: 25px;
+    font-weight: bolder;
+
+
+    img {
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+    }
+
+}
+
+
+
+
+

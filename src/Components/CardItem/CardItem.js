@@ -1,7 +1,7 @@
 import React from 'react';
 import { Card, CardContent, Typography, CardActions, CardActionArea, CardMedia } from '@material-ui/core'
 import './CardItem.scss';
-import item1 from '../../Assets/Images/item1.jpg'
+import { Link } from 'react-router-dom';
 
 
 
@@ -10,8 +10,10 @@ const CardItem = (props) => {
         <div className='intro'>
             <Card >
                 <CardActionArea>
-                     <CardMedia component="img" height='140'
-                        image={props.product.imageUrl} />
+                    <Link to={`/product/${props.product.id}`}>
+                        <CardMedia component="img" height='140'
+                            image={props.product.imageUrl.default} />
+                    </Link>
 
                     <CardContent className='introduce'>
                         <Typography className='text-warning' gutterBottom variant='h5' component='h2'>{props.product.title}</Typography>
